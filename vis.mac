@@ -1,0 +1,31 @@
+/vis/open OGL 600x600-0+0
+
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+/vis/drawVolume
+
+/vis/scene/add/trajectories smooth
+
+/vis/scene/endOfEventAction accumulate 10000
+
+/vis/scene/add/axes -200 200 0 200 mm
+
+/vis/geometry/set/visibility labLV 0 false
+/vis/viewer/set/style surface
+
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 45
+
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+
+# These lines are to avoid a bug related to hiddenEdge... Please don't mind.
+/vis/set/touchable labPV 0 C1_1_4PV 0
+/vis/touchable/set/visibility false
+/vis/set/touchable labPV 0 C1_1_4PV 0
+/vis/touchable/set/visibility true
+
+/vis/viewer/set/hiddenEdge true
+
+# avaiable colour: black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
